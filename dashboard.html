@@ -1,0 +1,46 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+ <div class="oj-hybrid-padding">
+  <h1>Activity 1</h1>
+  <oj-c-form-layout max-columns="1" direction="row">
+  <oj-c-input-text
+  id="itdis"
+ 
+  label-hint="Enter name"
+  value="{{name}}"
+  >
+  </oj-c-input-text>
+
+  <oj-c-input-password value="acd" label-hint="Enter Password"></oj-c-input-password>
+  <oj-c-input-date-text label-hint="Enter date"></oj-c-input-date-text>
+
+  <oj-c-radioset 
+  id="enabledRadioset" 
+  value="laptop" 
+  label-hint="Select Gender" 
+  options="[[laptopOptions]]">
+</oj-c-radioset>
+<oj-c-checkbox id="enabledCheckboxOn" value="true">Do you have passport</oj-c-checkbox>
+
+<oj-combobox-one
+id="combobox1"
+value="Chrome"
+label-hint="select occupation"
+class="oj-form-control-max-width-md">
+
+<oj-option value="Student">Student</oj-option>
+<oj-option value="Job">Job</oj-option>
+<oj-option value="Self Employed">Self Employed</oj-option>
+<oj-option value="Bussiness">Bussiness</oj-option>
+</oj-combobox-one>
+<oj-button id="button1" on-oj-action="[[buttonAction]]">Button</oj-button>
+  
+<oj-messages class="oj-color-invert" messages="[[messagesDataprovider]]" position="{}" display="notification"
+  display-options.category="none">
+</oj-messages>
+
+  </oj-c-form-layout>
+</div>
